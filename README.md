@@ -1,0 +1,2 @@
+# target-indicator
+Учебный проект
