@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Target Indicator</title>
+  </head>
+  <body>
+    <form>
+      <div class="container">
+        <div class="main-form">
+          <h1>Target indicator demo</h1>
+          <h4>Please, click to button to see target indicator demo</h4>
+          <div class="main-form__item">
+            <label for="currentValue">Current Value:</label>
+            <input type="number" id="currentValue" value="14" />
+          </div>
+          <div class="main-form__item">
+            <label for="maxValue">Max Value:</label>
+            <input type="number" id="maxValue" value="15" />
+          </div>
+
+          <button id="buttonShow" class="button">show</button>
+        </div>
+      </div>
+    </form>
+
+    <section class="popup">
+      <div class="target-indicator">
+        <div class="target-indicator__header">
+          <h2 class="target-indicator__title">Target Indicator Demo</h2>
+          <button class="target-indicator__clouse-btn">x</button>
+        </div>
+        <div class="target-indicator-block">
+          <div class="block-indicator">
+            <h3 class="block-indicator__title">Reached:</h3>
+            <div class="block-indicator__progress-wrapper">
+              <div class="block-indicator__current"></div>
+            </div>
+
+            <div class="block-indicator__max">
+              <div class="block-indicator__top">Target</div>
+              <div class="block-indicator__bottom"></div>
+            </div>
+          </div>
+          <span class="target-indicator-block-text"></span>
+        </div>
+      </div>
+    </section>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
